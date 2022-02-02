@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  padding: 40px 0px;
+  color: whitesmoke;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 0px;
+  color: white;
+  background: rgb(30, 30, 30);
+}
+
+main {
+  margin: 30px;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div {
+  width: 22%;
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 8px 8px 16px grey;
+  /* filter: blur(2px); */
+}
+
+img:hover{
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  /* filter: blur(0px); */
+  /* filter: grayscale(100%); */
+  /* filter: sepia(80%); */
+  filter: opacity(50%);
+  transition: 1000ml
+}
+
+/* tipo de medios: screen, print, speech, all */
+/* @media tipo de medio and (condicion){
+  reglas css
+ }*/
+
+ /* dispositivos pequeños */
+ @media all and (min-width:270px) and (max-width:767px){
+   div{
+     width: 90%;
+   }
+ }
+
+ /* dipositivos medianos */
+ @media screen and (min-width:768px) and (max-width:991px){
+   div{
+     width: 45%;
+   }
+ }
+
+ /* dispositivos grandes */
+ @media all and (min-width:992px){
+   /* agregar los estilos */
+ }
